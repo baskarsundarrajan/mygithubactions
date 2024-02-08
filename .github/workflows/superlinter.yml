@@ -7,9 +7,9 @@ Jobs :
       steps:
         -name : chekcout code
         uses: actions/checkout@v2
-
-        -name : Run Super-Linter
-         uses : github/super-linter@v3
+              
+      -name : Run Super-Linter
+       uses:github/super-linter@v3
            env  :
              Default_Branch : main
              GITHUb_TOKEN: ${{secret.GITHUB_TOKEN}}
